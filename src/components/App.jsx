@@ -14,14 +14,6 @@ export const App = () => {
     }
   });
   const [filter, setFilter] = useState('');
-
-  // componentDidMount() {
-  //   const savedContacts = localStorage.getItem('contacts');
-  //   if (savedContacts !== null) {
-  //     this.setState({ contacts: JSON.parse(savedContacts) });
-  //   }
-  // }
-
   useEffect(() => {
     localStorage.setItem('contacts', JSON.stringify(contacts));
   }, [contacts]);
